@@ -1,0 +1,252 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Work Sans", sans-serif;
+  background-color: #2b2b2b;
+  color: #fff;
+}
+
+/* ========================================= */
+/* ===common css==== */
+.container {
+  width: 1050px;
+  margin: 160px auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  border: none;
+  outline: none;
+  color: inherit;
+  cursor: pointer;
+  background-color: #a259ff;
+  border-radius: 20px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.btn-primary {
+  font-size: 2.2rem;
+  padding: 20.5px 50px;
+}
+.btn-secondary {
+  font-size: 1.6rem;
+  padding: 19px 50px;
+}
+.btn-tertiary {
+  font-size: 1.6rem;
+  padding: 12px 50px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* text css common */
+
+.h1-work-sans {
+  font-weight: 600;
+  font-size: 6.7rem;
+  line-height: 1.1;
+}
+
+.h3-work-sans {
+  font-weight: 600;
+  font-size: 3.8rem;
+  line-height: 1.2;
+}
+
+.h5-work-sans {
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 1.4;
+}
+
+.body-text-work-sans {
+  font-weight: 400;
+  font-size: 2.2rem;
+  line-height: 1.6;
+}
+
+.base-body-work-sans {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+
+.h4-space-mono {
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 1.4;
+  font-family: "Space Mono", monospace;
+}
+
+.h5-space-mono {
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 1.6;
+  font-family: "Space Mono", monospace;
+}
+/* =========Navigation======== */
+
+.navigation {
+  padding: 20px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.navigation .logo-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.navigation .logo-page .logo {
+  width: 32px;
+  height: 32px;
+}
+
+.navigation .logo-page .logo-title {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+}
+
+.navigation .btn-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.navigation .btn-navigation button:not(button:last-child) {
+  padding: 12px 20px;
+  background-color: transparent;
+}
+
+.navigation .btn-navigation button:last-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+/* ======Hero Section======= */
+
+.hero-section .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin: 80px auto;
+}
+
+.hero-section__left {
+  width: calc(100% / 2 - 15px);
+}
+
+.hero-section__left .desc {
+  margin-top: 20px;
+}
+
+.hero-section__left .btn-secondary {
+  margin-top: 30px;
+}
+
+.hero-section__additional-info {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.hero-section__additional-info .block {
+  width: calc((100% - 60px) / 3);
+}
+
+.hero-section__additional-info .title-case {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.hero-section__right .sub-image {
+  background-color: #3b3b3b;
+  padding: 22px 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.hero-section__right .artist-card,
+.trending-collection .artist-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+/* ====Trending collection===== */
+
+.trending-collection .container .h3-work-sans {
+  margin-top: 80px;
+}
+
+.collection-card-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 60px;
+}
+
+.trending-collection .body-text-work-sans {
+  margin-top: 10px;
+}
+
+.collection-card {
+  width: calc((100% - 60px) / 3);
+}
+
+.collection-card .avatar-group {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.collection-card .avatar-group * {
+  display: inline-block;
+  width: calc((100% - 30px) / 3);
+}
+
+.collection-card .avatar-group .box-more-image {
+  background-color: #a259ff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.collection-card .h5-work-sans{
+    margin-top: 15px;
+}
