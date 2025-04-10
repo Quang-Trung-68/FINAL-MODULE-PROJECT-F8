@@ -39,6 +39,7 @@ button {
   align-items: center;
   justify-content: center;
   gap: 12px;
+  transition: 0.3s ease-out;
 }
 
 .btn-primary {
@@ -101,6 +102,13 @@ button:hover {
   font-weight: 700;
   font-size: 2.2rem;
   line-height: 1.6;
+  font-family: "Space Mono", monospace;
+}
+
+.base-body-space-mono {
+  font-weight: 400;
+  font-size: 1.6;
+  line-height: 1.4;
   font-family: "Space Mono", monospace;
 }
 /* =========Navigation======== */
@@ -247,6 +255,70 @@ button:hover {
   border-radius: 20px;
 }
 
-.collection-card .h5-work-sans{
-    margin-top: 15px;
+.collection-card .h5-work-sans {
+  margin-top: 15px;
+}
+
+/* =====Top Rated Artists===== */
+
+.top-rated-artists .title {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+
+.top-rated-artists .title .body-text-work-sans {
+  margin-top: 10px;
+}
+
+.top-rated-artists .title .top-rated-title {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.top-rated-artists .title .btn-secondary {
+  background-color: transparent;
+  border: 2px solid #a259ff;
+}
+
+.top-rated-artists .artist-card-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.top-rated-artists .artist-card-item {
+  width: calc((100% - 90px) / 4);
+  background-color: #3B3B3B;
+  border-radius: 20px;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-rated-artists .artist-card-item .h5-work-sans{
+  margin-top: 20px;
+}
+
+.top-rated-artists .artist-card-item p{
+  margin-top: 5px;
+}
+
+.top-rated-artists .card-item-order{
+  position: absolute;
+  top: 18px;
+  left: 20px;
+  color:#858584;
+  width: 30px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: #2B2B2B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
