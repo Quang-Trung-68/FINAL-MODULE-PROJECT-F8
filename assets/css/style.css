@@ -32,6 +32,7 @@ button {
   outline: none;
   color: inherit;
   cursor: pointer;
+  font-family: "Work Sans", sans-serif;
   background-color: #a259ff;
   border-radius: 20px;
   font-weight: 600;
@@ -69,6 +70,12 @@ button:hover {
   line-height: 1.1;
 }
 
+.h2-work-sans {
+  font-weight: 600;
+  font-size: 5.1rem;
+  line-height: 1.1;
+}
+
 .h3-work-sans {
   font-weight: 600;
   font-size: 3.8rem;
@@ -93,6 +100,13 @@ button:hover {
   line-height: 1.4;
 }
 
+.h3-space-mono{
+  font-weight: 700;
+  font-size: 3.8rem;
+  line-height: 1.2;
+  font-family: "Space Mono", monospace;
+}
+
 .h4-space-mono {
   font-weight: 700;
   font-size: 2.8rem;
@@ -112,6 +126,13 @@ button:hover {
   font-size: 1.6;
   line-height: 1.4;
   font-family: "Space Mono", monospace;
+}
+
+.caption-space-mono {
+  font-weight: 400;
+  font-family: "Space Mono", monospace;
+  font-size: 1.2rem;
+  line-height: 1.1;
 }
 /* =========Navigation======== */
 
@@ -208,6 +229,7 @@ button:hover {
 .artist-card {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   gap: 12px;
   margin-top: 10px;
 }
@@ -381,8 +403,93 @@ button:hover {
 
 .discover-nfts .discover-nft-item {
   width: calc((100% - 60px) / 3);
+  background-color: #3b3b3b;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.discover-nfts .discover-nft-item .thumb {
+  object-fit: cover;
+  width: 100%;
+  height: 296px;
 }
 
 .discover-nfts .discover-nft-item .content {
   padding: 20px 30px 25px;
+}
+
+.discover-nfts .discover-nft-item .content .value {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.discover-nfts .discover-nft-item .content .value .caption-space-mono {
+  color: #858584;
+}
+
+.discover-nfts .discover-nft-item .content .value .base-body-space-mono {
+  margin-top: 8px;
+}
+
+.discover-nfts .discover-nft-item .content .bid {
+  text-align: right;
+}
+
+/* ======NFT Highlight======= */
+
+.nft-highlight {
+  background: linear-gradient(to top, #a259ff, #a259ff00),
+    url(../img/mushHL.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.nft-highlight .container {
+  padding: 360px 0 60px;
+}
+
+.nft-highlight .artist-card {
+  background-color: #3b3b3b;
+  display: inline-flex;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-top: 0;
+}
+
+.nft-highlight .h2-work-sans {
+  margin-top: 30px;
+}
+
+.nft-highlight .btn-secondary {
+  margin-top: 30px;
+  background-color: #fff;
+  color: #000;
+}
+
+.nft-highlight .block-cta {
+  position: relative;
+}
+
+.nft-highlight .clock-remaining {
+  padding: 30px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: #3B3B3B80;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+}
+.nft-highlight .clock-remaining .time-remain {
+  margin-top: 10px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.nft-highlight .clock-remaining .time-remain .caption-space-mono{
+  margin-top: 5px;
 }
